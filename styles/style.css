@@ -28,46 +28,46 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   min-height: 100dvh;
-  background: url("styles/images/1.jpg") no-repeat center/cover;
+  background: url("styles/images/1.webp") no-repeat center/cover;
   animation: changeBg 40s infinite;
 }
 
 /* hiệu ứng đổi background */
 @keyframes changeBg {
   0% {
-    background-image: url("images/1.jpg");
+    background-image: url("images/1.webp");
   }
 
   12.5% {
-    background-image: url("images/2.jpg");
+    background-image: url("images/2.webp");
   }
 
   25% {
-    background-image: url("images/3.jpg");
+    background-image: url("images/3.webp");
   }
 
   37.5% {
-    background-image: url("images/4.jpg");
+    background-image: url("images/4.webp");
   }
 
   50% {
-    background-image: url("images/5.jpg");
+    background-image: url("images/5.webp");
   }
 
   62.5% {
-    background-image: url("images/6.jpg");
+    background-image: url("images/6.webp");
   }
 
   75% {
-    background-image: url("images/7.jpg");
+    background-image: url("images/7.webp");
   }
 
   87.5% {
-    background-image: url("images/8.jpg");
+    background-image: url("images/8.webp");
   }
 
   100% {
-    background-image: url("images/1.jpg");
+    background-image: url("images/1.webp");
   }
 }
 
@@ -162,15 +162,15 @@ body {
 }
 
 @keyframes numberBg {
-  0%   { background-image: url("images/1.jpg"); }
-  12.5%{ background-image: url("images/2.jpg"); }
-  25%  { background-image: url("images/3.jpg"); }
-  37.5%{ background-image: url("images/4.jpg"); }
-  50%  { background-image: url("images/5.jpg"); }
-  62.5%{ background-image: url("images/6.jpg"); }
-  75%  { background-image: url("images/7.jpg"); }
-  87.5%{ background-image: url("images/8.jpg"); }
-  100% { background-image: url("images/1.jpg"); }
+  0%   { background-image: url("images/1.webp"); }
+  12.5%{ background-image: url("images/2.webp"); }
+  25%  { background-image: url("images/3.webp"); }
+  37.5%{ background-image: url("images/4.webp"); }
+  50%  { background-image: url("images/5.webp"); }
+  62.5%{ background-image: url("images/6.webp"); }
+  75%  { background-image: url("images/7.webp"); }
+  87.5%{ background-image: url("images/8.webp"); }
+  100% { background-image: url("images/1.webp"); }
 }
 
 
