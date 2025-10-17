@@ -29,6 +29,7 @@ body {
   color: var(--text);
   min-height: 100dvh;
   background: url("styles/images/1.webp") no-repeat center/cover;
+  background-image: linear-gradient(to bottom right, pink, white);
   animation: changeBg 40s infinite;
 }
 
@@ -157,7 +158,8 @@ body {
   overflow: hidden;
 
   /* ảnh nền động */
-  background: url("images/1.jpg") center/cover no-repeat;
+  background: url("images/1.webp") center/cover no-repeat;
+  background-image: linear-gradient(to bottom right, pink, white);
   animation: numberBg 30s infinite;
 }
 
