@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quay số 1–115</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="card" role="application" aria-label="Ứng dụng quay số 1 đến 115">
+      <div class="header">
+        <div class="title">Quay số may mắn</div>
+        <div class="row" style="gap:12px">
+          <button id="reset" class="danger" title="Xóa lịch sử và quay lại từ đầu">Reset</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <section class="display">
+          <div class="number-wrap">
+            <div class="glow" aria-hidden="true"></div>
+            <div id="number" class="number" aria-live="polite" aria-atomic="true">—</div>
+          </div>
+          <div class="controls">
+            <button id="spin" class="primary" title="Nhấn Space/Enter để quay">Quay số</button>
+            <button id="quick" class="ghost" title="Quay nhanh không hiệu ứng">Quay nhanh</button>
+          </div>
+        </section>
+
+        <aside class="sidebar">
+          <div class="panel">
+            <h3>Cài đặt</h3>
+            <div class="row switch">
+              <label for="unique">
+                <strong>Không lặp số</strong>
+                <div class="help">Khi bật, mỗi số chỉ xuất hiện 1 lần cho đến khi dùng hết 1–115.</div>
+              </label>
+              <input id="unique" type="checkbox" />
+            </div>
+            <div class="row">
+              <label for="min">Từ</label>
+              <input id="min" type="number" value="1" min="-999999" />
+            </div>
+            <div class="row">
+              <label for="max">Đến</label>
+              <input id="max" type="number" value="115" max="9999999" />
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Lịch sử</h3>
+            <div id="history" class="list" aria-live="polite"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal hiển thị kết quả -->
+  <div id="winnerModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-labelledby="winnerTitle">
+      <button class="close" id="closeModal" title="Đóng">&times;</button>
+      <div id="winnerTitle" class="winner-title">🎉 NUMBER LUCKY 🎉</div>
+      <div class="winner-crown">👑</div>
+      <div id="winnerNumber" class="winner-number">Ai sẽ là người được nhận những phần quà hấp dẫn đây?</div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
